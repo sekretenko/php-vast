@@ -76,4 +76,15 @@ class MediaFile
         $this->domElement->setAttribute('bitrate', (int) $bitrate);
         return $this;
     }
+
+    /**
+     * set id
+     * @param string $id
+     * @return $this
+     */
+    public function setId($id)
+    {
+        $this->domElement->setAttribute('id', $id);
+        return $this;
+    }
 }
